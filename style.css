@@ -1,0 +1,71 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --BGCOLOR: #313131;
+  --OPERATOR-BG: #ffa209;
+  --OTHER-BTN-BG: #8c8c8c;
+  --TEXT-COLOR: white;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--BGCOLOR);
+  color: var(--TEXT-COLOR);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calculator {
+  background-color: black;
+  width: 250px;
+  /* height: 400px; */
+  border: 2px solid white;
+  border-radius: 30px;
+}
+.container {
+  margin: 9px;
+  /* height: 400px; */
+}
+.dashboard-input {
+  width: 100%;
+  /* background-color: antiquewhite; */
+  color: whitesmoke;
+  height: 10px;
+  padding-top: 5rem;
+  margin-bottom: 5rem;
+  font-size: 3rem;
+  text-align: right;
+}
+.buttons {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  font-weight: 700;
+}
+.btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.zero {
+  /* background-color: red; */
+  grid-column: 1/3;
+  width: 90px;
+  border-radius: 20px;
+}
+.operator {
+  background-color: var(--OPERATOR-BG);
+}
+.numbers {
+  background-color: var(--BGCOLOR);
+}
+.other {
+  background-color: var(--OTHER-BTN-BG);
+  color: black;
+}
