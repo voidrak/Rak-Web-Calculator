@@ -59,9 +59,11 @@ body {
   width: 90px;
   border-radius: 20px;
 }
-.operator {
+.operator,
+#equal {
   background-color: var(--OPERATOR-BG);
 }
+
 .numbers {
   background-color: var(--BGCOLOR);
 }
