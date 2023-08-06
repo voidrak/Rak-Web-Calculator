@@ -1,8 +1,6 @@
-let numberBtn = document.getElementById("numbers");
+let numberBtn = document.querySelectorAll("numbers");
 let dashboard = document.getElementById("dashboard-input");
 
-// console.log(numberBtn.textContent);
-function inputToDashboard() {
-  console.log("working");
-  dashboard.textContent = numberBtn.textContent;
-}
+numberBtn.style.color = "red";
+// numberBtn.addEventListener("onclick", function () {
+// });
