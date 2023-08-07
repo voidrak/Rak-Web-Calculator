@@ -5,7 +5,7 @@
 
 # Description
 Simple web-based calculator using JavaScript. I took inspiration from freecodecamp but the implementation is solely mine.
-<p>Here is the <a href="https://eclectic-kleicha-195b58.netlify.app" target="_blank">Link</a></p>
+<p>Here is the <a href="https://rakcalcualtor.netlify.app" target="_blank">Link</a></p>
 
 # Features
 The calculator currently works only the basic 4 Arithmetic Operations: 
