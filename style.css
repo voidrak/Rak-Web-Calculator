@@ -15,8 +15,10 @@ body {
   background-color: var(--BGCOLOR);
   color: var(--TEXT-COLOR);
   display: flex;
+  flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
+  row-gap: 3rem;
 }
 .calculator {
   background-color: black;
@@ -70,4 +72,8 @@ body {
 .other {
   background-color: var(--OTHER-BTN-BG);
   color: black;
+}
+#personal a:any-link {
+  text-decoration: none;
+  color: aquamarine;
 }
