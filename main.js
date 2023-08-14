@@ -4,28 +4,20 @@ const numBtn = document.querySelectorAll(".numbers");
 const opBtn = document.querySelectorAll(".operator");
 const equal = document.getElementById("equal");
 let arrayForCalculation = [];
-let sum = 0;
 let result = 0;
-let multi = 1;
 let isAdd = false;
 let isSubtract = false;
 let isDivide = false;
 let isMultiply = false;
 
 function add() {
-  for (let i = 0; i < arrayForCalculation.length; i++) {
-    sum += arrayForCalculation[i];
-  }
-  result = sum;
+  result = arrayForCalculation[0] + arrayForCalculation[1];
 }
 function subtract() {
   result = arrayForCalculation[0] - arrayForCalculation[1];
 }
 function multiply() {
-  for (let i = 0; i < arrayForCalculation.length; i++) {
-    multi *= arrayForCalculation[i];
-  }
-  result = multi;
+  result = arrayForCalculation[0] * arrayForCalculation[1];
 }
 function divide() {
   result = arrayForCalculation[0] / arrayForCalculation[1];
@@ -78,6 +70,7 @@ opBtn.forEach((foreach) => {
 
 // operation for equal sign
 equal.addEventListener("click", (event) => {
+  // add
   arrayForCalculation.push(JSON.parse(dashboard.textContent));
   if (isAdd) {
     add();
